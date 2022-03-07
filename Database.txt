@@ -2,4 +2,16 @@
 // Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
 
 Entity AUTOMOBILI
-Columns - Data Type - Attributes - Index
+Columns                              -    Data Type       -     Attributes                                  -       Index
+id                                   -    INT             -     UNIQUE, NOT_NULL, AUTO_INCREMENT            -       Primary Key
+marca                                -    varchar(50)     -     NOT_NULL                                    -
+modello                              -    varchar         -     NOT_NULL, Default ('')                      -
+Mese/anno immatricolazione           -    DATE            -     NOT_NULL                                    -
+Tipo di carrozzeria                  -    varchar         -     NOT_NULL                                    -
+Tipo di alimentazione                -    varchar         -     NOT_NULL                                    -
+Cavalli                              -    INT             -     NOT_NULL                                    -
+Prezzo                               -    FLOAT           -     NULL                                        -
+Modifiche                            -    BOOL            -     NOT_NULL, Default ('')                      -
+Garanzia                             -    BOOL            -     DATE, Default ('')                          -
+Condizioni                           -    char            -     NOT_NULL, Default ('')                      -
+Foto                                 -    varchar         -     NOT_NULL, Default('')                       -
